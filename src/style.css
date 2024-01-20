@@ -1,4 +1,6 @@
 :root {
+  --heading-font: "Rubik", sans-serif;
+  --default-font: "Cabin", sans-serif;
 }
 
 * {
@@ -6,7 +8,9 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+body {
+  font-family: var(--default-font);
+}
 h1 {
-  font-family: "Rubik", sans-serif;
+  font-family: var(--heading-font);
 }
