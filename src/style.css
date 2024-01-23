@@ -3,11 +3,6 @@
   --default-font: "Cabin", sans-serif;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 body {
   font-family: var(--default-font);
   background-color: #272044;
@@ -15,7 +10,8 @@ body {
 h1,
 h2,
 h3,
-h4 {
+h4,
+h5 {
   font-family: var(--heading-font);
 }
 
@@ -66,15 +62,21 @@ header a {
   max-width: 1400px;
   margin: 0 auto;
 }
+.text-center {
+  text-align: center;
+}
 section {
-  max-width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
-  padding: 100px 0;
+  padding: 100px;
+}
+section.secondary {
+  background-color: #f8f8f8;
 }
 main {
   background-color: white;
 }
-main h3 {
+main h2 {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.5;
@@ -84,12 +86,26 @@ main h3 {
   margin: 0;
   text-transform: uppercase;
 }
-main h4 {
+main h3 {
   font-weight: 700;
   font-size: 30px;
   line-height: 1.5;
   color: #272044;
   margin: 0;
+}
+main h4 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1;
+  margin: 0;
+  color: #272044;
+}
+main h5 {
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1;
+  margin: 0;
+  color: #272044;
 }
 main p {
   font-style: normal;
@@ -99,9 +115,35 @@ main p {
   color: #272044;
   opacity: 0.7;
 }
+.card {
+  background: white;
+  margin: 30px 0;
+}
+.card-body {
+  padding: 30px;
+}
+.card-footer {
+  padding-top: 25px;
+}
+.cafe {
+  width: 200px;
+  height: 150px;
+}
+.btn {
+  display: block;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 21px;
+  padding: 15px;
+  background: #462cb3;
+  color: white;
+  letter-spacing: 3px;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+}
 .grid {
   display: grid;
-  grid-template-columns: 1fr 2fr 2fr;
   gap: 64px;
 }
 .grid-2-columns {
@@ -110,8 +152,12 @@ main p {
 .grid-3-columns {
   grid-template-columns: 1fr 2fr 2fr;
 }
+.grid-3-equal-columns {
+  grid-template-columns: 1fr 1fr 1fr;
+}
 .img-responsive {
   max-width: 100%;
+  display: block;
 }
 .mosque {
   border-radius: 4px;
