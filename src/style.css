@@ -17,7 +17,7 @@ h5 {
 
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)),
-    url("../images/bg3.jpg");
+    url("../images/bg1.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -172,15 +172,13 @@ main p {
 }
 .mosque {
   border-radius: 4px;
-  /* width: 500px;
-  height: 450px; */
 }
 footer {
   background-image: linear-gradient(
       rgba(39, 32, 68, 0.9),
       rgba(39, 32, 68, 0.9)
     ),
-    url("../images/f3.jpg");
+    url("../images/f1.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
